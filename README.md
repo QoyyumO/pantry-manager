@@ -39,8 +39,8 @@ Follow these steps to set up the project locally in Visual Studio Code (VS Code)
 5. **Run the development server:**:
    ```sh
    npm run dev
-6. **Open the app :**:
-   Open your browser and go to http://localhost:3000.
+6. **Open the app :**
+-    Open your browser and go to http://localhost:3000.
 
 ## Usage
 
