@@ -4,24 +4,26 @@ import theme from '../theme'
 import createEmotionCache from '../createEmotionCache'
 
 class MyDocument extends Document {
-  render() {
-    return (
-      <Html lang="en">
-        <Head>
-          <meta name="theme-color" content={theme.palette.primary.main} />
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-          />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    )
+    render() {
+      return (
+        <Html lang="en">
+          <Head>
+            <meta name="theme-color" content={theme.palette.primary.main} />
+            <link
+              rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            />
+            <link rel="icon" href="/pantry.png" type="image/png" sizes="16x16" />
+            <meta name="description" content="Pantry Manager - Manage your pantry items efficiently" />
+          </Head>
+          <body>
+            <Main />
+            <NextScript />
+          </body>
+        </Html>
+      )
+    }
   }
-}
 
 MyDocument.getInitialProps = async (ctx: DocumentContext) => {
   const originalRenderPage = ctx.renderPage

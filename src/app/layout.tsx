@@ -1,9 +1,14 @@
-'use client'
-
 import * as React from 'react'
-import { ThemeProvider } from '@mui/material/styles'
-import CssBaseline from '@mui/material/CssBaseline'
-import theme from '../theme'
+import ThemeRegistry from '../components/ThemeRegistry'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Pantry Manager',
+  description: 'Manage your pantry items efficiently',
+  icons: {
+    icon: '/pantry.png',
+  },
+}
 
 export default function RootLayout({
   children,
@@ -12,10 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <body>{children}</body>
-      </ThemeProvider>
+      <head>
+        <link rel="icon" href="/pantry.png" type="image/png" sizes="16x16" />
+      </head>
+      <body>
+        <ThemeRegistry>{children}</ThemeRegistry>
+      </body>
     </html>
   )
 }
