@@ -19,14 +19,14 @@ Follow these steps to set up the project locally in Visual Studio Code (VS Code)
    cd pantry-manager
    ```
 2. **Open the project in VS Code**:
-   Open VS Code.
-   Go to File > Open Folder and select the pantry-manager folder.
+-   Open VS Code.
+-   Go to File > Open Folder and select the pantry-manager folder.
 3. **Install dependencies**:
    ```sh
    npm install
 4. **Set up Firebase**:
-   Create a Firebase project at Firebase Console.
-   Create a .env file in the root directory of the project with the following environment variables:
+-   Create a Firebase project at Firebase Console.
+-   Create a .env file in the root directory of the project with the following environment variables:
    ```sh
     NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
     NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
@@ -35,7 +35,7 @@ Follow these steps to set up the project locally in Visual Studio Code (VS Code)
     NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
     NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
    ```
-   Replace the placeholder values (your-api-key, your-auth-domain, etc.) with your Firebase project credentials.
+-  Replace the placeholder values (your-api-key, your-auth-domain, etc.) with your Firebase project credentials.
 5. **Run the development server:**:
    ```sh
    npm run dev
